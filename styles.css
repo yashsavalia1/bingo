@@ -134,3 +134,8 @@
     h3,p {
         font-family: 'Nunito';
     }
+
+    .mystyle {
+        background-color: coral;
+        color: white;
+    }
