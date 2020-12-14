@@ -48,13 +48,15 @@
         float: left;
     }
 
-    td,
-    th {
+    td {
         border: 1px solid black;
         text-align: center;
+        cursor: pointer;
     }
 
     th {
+        border: 1px solid black;
+        text-align: center;
         height: 50px;
         font-size: 36px;
         color: white;
