@@ -1,18 +1,15 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 const loginErrorMsg = document.getElementById("login-error-msg");
-const idnums = ["1016481","1019786","1018133","1019923","1019005",
-"1019146","1016916","1019009","1019726","1019090","1017923",
-"1017871","1017683","1021536","1019030","1018465","1018556",
-"1017600","1017805","1018582","1020236","1019368","1016256",
-"1019831","1024859","1028063","1017580","1017985","1019397",
-"1017224","1020277","1024988","1017760","1020552","1017808",
-"1018553","1019973","1018530","1019007","1019078","1018982",
-"1018017","1027277","1018605","1019184","1019109","1018978",
-"1019763","1019106","1019107","1019105","1023334","1020213",
-"1021435",]
+//To be replaced with strings of ID Numbers
+const idnums = ["1","2","3","4","5","6","7","8","9",
+                "11","12","13","14","15","16","17","18","19",
+                "21","22","23","24","25","26","27","28","29",
+                "31","32","33","34","35","36","37","38","39",
+                "41","42","43","44","45","46","47","48","49",
+                "51","52","53","54","55","56","57","58","59"]
 
-
+//Checks whether idnums contains the inputed string
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const user = loginForm.IDNum.value;
@@ -25,6 +22,7 @@ loginButton.addEventListener("click", (e) => {
     }
 })
 
+//redirects the user to the specified bingo board
 function Redirect (idnums, user) {
     var index = idnums.indexOf(user);
     
